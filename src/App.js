@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import React,  {useState} from "react";
 import './App.css';
+import logo from './logo_usm_negro.png';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+
+  return(
+    <div className="app">
+      <div className="header">
+        <img className="logo" src={logo} alt="logo-usm" />
+      </div>
+      <h1>AULAAAAAAAA</h1>
     </div>
   );
 }
