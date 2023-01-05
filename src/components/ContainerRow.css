@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rectangle {
+    height: 400px;
+    width: 400px;
+    background-color: #ff0000;
+    border: 2px solid #000000;
+    border-radius: 10px;
+  }
