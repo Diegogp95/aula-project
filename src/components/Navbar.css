@@ -1,0 +1,12 @@
+.navbar-container{
+    background-color: white;
+    height: auto;
+    width: 100%;
+    border: 2px solid black;
+    max-height: max-content;
+}
+
+.logo{
+    height: 50px;
+    margin: 10px 25px;
+}

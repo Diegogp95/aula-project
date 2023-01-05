@@ -1,25 +1,6 @@
-.app{
-  min-height: 100vh;
-  background:linear-gradient(to right bottom, #004BB5,#0e6df3);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-.logo{
-  grid-column: 1 / 4;
-  grid-row: 1/2;
-  min-height: 42px;
-  margin: 27.27% 6.41%;
-  height: 50px;
-  display: block;
-}
-
-.header{
-  grid-column: 1 / 4;
-  grid-row: 1/2;
-  max-height: 70px;
-
-  background-color: whitesmoke;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
 }
