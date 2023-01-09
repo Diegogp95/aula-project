@@ -1,12 +1,9 @@
 .container{
     display: flex;
     justify-content: space-around;
+    vertical-align: top;
 }
 
-.rectangle {
-    height: 400px;
-    width: 400px;
-    background-color: #ff0000;
-    border: 2px solid #000000;
-    border-radius: 10px;
-  }
+.info{
+    flex-direction: column;
+}

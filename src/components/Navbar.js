@@ -6,7 +6,9 @@ function Navbar() {
   return (
     <nav>
       <div className="navbar-container">
-        <img src={logo} alt="logo-usm" className='logo'/>
+        <a href="https://aula.usm.cl">
+          <img src={logo} alt="logo-usm" className='logo'/>
+        </a>
       </div>
     </nav>
   )
