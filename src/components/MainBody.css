@@ -15,3 +15,17 @@
     position: relative;
     margin-top: 75px;
 }
+
+@media (max-width: 1000px) {
+    /* Styles for container and child elements when viewport width is less than 600px */
+    .main-container {
+        flex-direction: column;
+        vertical-align: auto;
+        align-items: center;
+        min-height: 1000px;
+    }
+    
+    .child {
+        margin: 30px;
+    }
+}

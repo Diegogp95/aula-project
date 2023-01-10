@@ -5,9 +5,28 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .marcas{
     height: 80px;
-    margin: 40px 60px;
+    margin: 40px;
+}
+
+.Footer div:first-child{
+    margin-right: 30%;
+}
+
+/* Media query to target viewport width */
+@media (max-width: 1000px) {
+    /* Styles for container and child elements when viewport width is less than 1000px */
+    .Footer {
+        flex-direction: column;
+        vertical-align: auto;
+        align-items: center;
+    }
+    
+    .child {
+        flex-basis: 100%;
+    }
 }

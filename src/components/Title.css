@@ -6,27 +6,35 @@
 }
 
 .title-aula{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
     font-size: 200px;
     text-align: center;
-    color: white;
-    padding: 5px;
-    font-stretch: 10%;
 }
 
 .title-virtual{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
     font-size: 96px;
     text-align: left;
-    color: white;
-    padding: 5px;
-    font-stretch: 10%;
     opacity: 0.5;
     line-height: 0.75;
 }
 
 .title-aula, .title-virtual{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    padding: 5px;
+    font-stretch: 10%;
     text-shadow: 2px 2px 10px black;
+}
+
+
+/* Media query to target viewport width */
+@media (max-width: 1000px) {
+    /* Styles for container and child elements when viewport width is less than 1000px */
+    .title-aula {
+        font-size: 90px;
+    }
+
+    .title-virtual {
+        font-size: 43px;
+    }
 }
