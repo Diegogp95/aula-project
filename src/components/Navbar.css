@@ -1,12 +1,18 @@
 .navbar-container{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: white;
     height: auto;
     width: 100%;
-    border: 2px solid black;
+    border: 1px solid black;
     max-height: max-content;
+    box-shadow: 1px 1px 1px #222;
 }
 
 .logo{
     height: 50px;
     margin: 10px 25px;
 }
+

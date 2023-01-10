@@ -8,12 +8,8 @@ function App(){
 
   return(
     <>
-      <div className="Navbar">
         <Navbar />
-      </div>
-      <div className="Body">
         <MainBody />
-      </div>
       <Footer />
     </>
   );

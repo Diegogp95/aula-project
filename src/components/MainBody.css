@@ -1,7 +1,17 @@
 .main-container{
-    background-color: #004B85;
-    width: 100vw;
+    z-index: 0;
+    background: linear-gradient(to right top,
+        rgba(0, 0, 0, 0.5),
+        rgba(255, 255, 255, 0.1)),
+        repeating-linear-gradient(36deg,
+        rgb(0, 62, 110),
+        rgb(0, 62, 110) 50px,
+        rgb(0, 62, 110) 50px,
+        rgb(0, 55, 101) 70px);
+    width: 100%;
     height: auto;
-    min-height: 540px;
+    min-height: 720px;
     padding-top: 60px;
+    position: relative;
+    margin-top: 75px;
 }
