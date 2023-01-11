@@ -11,7 +11,7 @@ function Footer() {
         <FooterText />
         <img src={acreditacion} alt="" className='marcas'/>
         <img src={g9} alt="" className='marcas'/>
-        <img src={usm} alt="" className='marcas'/>
+        <img src={usm} alt="" className='uhome'/>
     </div>
   )
 }

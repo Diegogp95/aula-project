@@ -8,9 +8,16 @@
     justify-content: space-around;
 }
 
-.marcas{
+.marcas
+{
     height: 80px;
     margin: 40px;
+}
+
+.uhome{
+    height: 50px;
+    margin: 40px;
+    margin-top: 60px;
 }
 
 .Footer div:first-child{
