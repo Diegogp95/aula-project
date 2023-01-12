@@ -13,3 +13,43 @@
 .hidden{
     display: none;
 }
+
+.closeButton{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    height: fit-content;
+}
+
+.poppanel{
+    height: 700px;
+    width: 600px;
+    max-width: 70vw;
+    max-height: 95vh;
+    background-color: #004B85;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 10px black;
+    
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+  }
+
+.band{
+    background: linear-gradient(to right,
+    #D60019,  #D60019 33%, #F7AE00 33%,
+    #F7AE00 67%, #004B85 67%);
+    width: 10%; /* your specific width */
+    height: 8%;
+    position: absolute;
+    left: 5%;
+    top: -0.2%;
+    border-radius: 1px;
+    box-shadow: 3px 3px 3px black;
+    border-top-left-radius: 3px;
+}
