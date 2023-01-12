@@ -6,10 +6,10 @@ function GuidePanel() {
     <div className='guide-panel'>
       <p className='info-text'>
         ¿Nuevo Aquí?<br />
-        <ul>
-            <li>Si eres alumno USM debes iniciar sesión utilizando tu cuenta Office 365.</li>
-        </ul>
-    </p>
+      </p>
+      <ul className='info-text'>
+          <li>Si eres alumno USM debes iniciar sesión utilizando tu cuenta Office 365.</li>
+      </ul>
     </div>
   )
 }

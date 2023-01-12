@@ -4,14 +4,14 @@ import LoginPanel from './LoginPanel';
 import Title from './Title';
 import GuidePanel from './GuidePanel';
 
-function ContainerRow() {
+function ContainerRow({handleClick}) {
   return (
     <div className='container'>
       <div className="info">
         <Title />
         <GuidePanel />
       </div>
-      <LoginPanel />
+      <LoginPanel handleClick={handleClick} />
     </div>
   )
 }
