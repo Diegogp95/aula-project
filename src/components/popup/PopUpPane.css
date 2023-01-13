@@ -18,7 +18,6 @@
     position: absolute;
     top: 5%;
     right: 5%;
-    height: fit-content;
 }
 
 .poppanel{
@@ -47,7 +46,7 @@
     #D60019,  #D60019 33%, #F7AE00 33%,
     #F7AE00 67%, #004B85 67%);
     width: 10%; /* your specific width */
-    height: 8%;
+    height: 7%;
     position: absolute;
     left: 5%;
     top: -0.2%;

@@ -14,6 +14,7 @@
     padding-top: 70px;
     position: relative;
     margin-top: 70px;
+    padding-bottom: 10vh;
 }
 
 @media (max-width: 1000px) {
