@@ -17,6 +17,10 @@
     padding-bottom: 10vh;
 }
 
+.main-container > *{
+    margin-bottom: 10%;
+}
+
 @media (max-width: 1000px) {
     /* Styles for container and child elements when viewport width is less than 600px */
     .main-container {
@@ -24,9 +28,5 @@
         vertical-align: auto;
         align-items: center;
         min-height: 1000px;
-    }
-    
-    .child {
-        margin: 30px;
     }
 }
