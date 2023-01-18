@@ -7,6 +7,7 @@ function GuidePanel() {
 
   return (
     <div className='guide-panel'>
+      <div id='Qs'>
       <p className='section'>
         ¿Nuevo Aquí?<br />
       </p>
@@ -19,6 +20,7 @@ function GuidePanel() {
       <p className='section'>Preguntas Frecuentes (F.A.Q.)</p>
       <p className='charBtn' onClick={() => setIsExpanded(!isExpanded)}>{isExpanded ? '▲' : '▼'}</p>
       {isExpanded && <div className='text'><FAQ /></div>}
+    </div>
     </div>
   )
 }

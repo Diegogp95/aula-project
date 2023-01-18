@@ -2,7 +2,7 @@
     display: block;
     z-index: 3;
     background: transparent;
-    background-color:rgba(240, 255, 255, 0.65);
+    background-color:rgba(188, 188, 188, 0.664);
     position: fixed;
     top: 0;
     left: 0;
@@ -45,7 +45,7 @@
     background: linear-gradient(to right,
     #D60019,  #D60019 33%, #F7AE00 33%,
     #F7AE00 67%, #004B85 67%);
-    width: 10%; /* your specific width */
+    width: 10%;
     height: 7%;
     position: absolute;
     left: 5%;

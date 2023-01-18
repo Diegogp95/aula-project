@@ -21,6 +21,14 @@
     margin-bottom: 10%;
 }
 
+.bannerContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
 @media (max-width: 1000px) {
     /* Styles for container and child elements when viewport width is less than 600px */
     .main-container {
@@ -29,4 +37,30 @@
         align-items: center;
         min-height: 1000px;
     }
+
+    .bannerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bannerContainer > *{
+        margin-bottom: 10%;
+    }
+}
+
+@media not screen and (max-width: 1000px) {
+    .banner {
+      margin: auto auto;
+    }
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 10px;
+}
+
+.inputLabel{
+    color: white;
 }

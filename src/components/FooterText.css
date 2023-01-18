@@ -1,6 +1,11 @@
 .contactText{
-    font-size: 10px;
+    font-size: 12px;
     color: white;
     padding: 40px 60px;
     text-shadow: none;
+}
+
+.external {
+    color: white;
+    text-decoration: underline;
 }

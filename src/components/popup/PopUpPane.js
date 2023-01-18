@@ -38,17 +38,23 @@ const submitForm = (email, password) => {
 
 
   return (
-    <div className={isVisible? 'visible' : 'hidden'}>
+    <div className={isVisible? 'visible' : 'hidden'} onClick={handleClick}>
       <div className='closeButton'>
         <MDBBtn className="btn-close" size='lg' color="danger" 
             aria-label="Close" onClick={handleClick} />
       </div>
-      <div className="poppanel">
+      <div className="poppanel" onClick={(e) => e.stopPropagation()}>
         <div className="band"></div>
-        <MDBInput label='Email' id='typeEmail' type='email' contrast 
-            value={email} onChange={(e) => setEmail(e.target.value)} />        
-        <MDBInput label='Password' id='typePassword' type='password' contrast 
-            value={password} onChange={(e) => setPassword(e.target.value)} />
+        <div className="inputContainer">
+            <p className='inputLabel'>Correo electrónico institucional</p>
+            <MDBInput label='Email' id='typeEmail' type='email' contrast 
+                value={email} onChange={(e) => setEmail(e.target.value)} />        
+        </div>
+        <div className="inputContainer">
+            <p className='inputLabel'>Contraseña</p>
+            <MDBInput label='Password' id='typePassword' type='password' contrast 
+                value={password} onChange={(e) => setPassword(e.target.value)} />
+        </div>
         <MDBBtn className="btn-submit" size='lg' color="light" 
             aria-label="Submit"  > Ingresar</MDBBtn>
 {/*            
