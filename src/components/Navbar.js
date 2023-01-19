@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo_negro_crop.png';
+import logo from './img/logo_negro_crop.png';
 import './Navbar.css';
 
 function Navbar() {

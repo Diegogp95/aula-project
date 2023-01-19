@@ -1,7 +1,7 @@
 import React from 'react';
 import './LoginPanel.css';
 import './Button.css';
-import o365logo from './o365-icon.svg';
+import o365logo from './img/o365-icon.svg';
 
 function LoginPanel({handleClick}) {
   return (
