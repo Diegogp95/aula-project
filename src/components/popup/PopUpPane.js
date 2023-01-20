@@ -45,12 +45,12 @@ const submitForm = (email, password) => {
       </div>
       <div className="poppanel" onClick={(e) => e.stopPropagation()}>
         <div className="band"></div>
-        <div className="inputContainer">
+        <div className="inputBlock">
             <p className='inputLabel'>Correo electrónico institucional</p>
             <MDBInput label='Email' id='typeEmail' type='email' contrast 
                 value={email} onChange={(e) => setEmail(e.target.value)} />        
         </div>
-        <div className="inputContainer">
+        <div className="inputBlock">
             <p className='inputLabel'>Contraseña</p>
             <MDBInput label='Password' id='typePassword' type='password' contrast 
                 value={password} onChange={(e) => setPassword(e.target.value)} />

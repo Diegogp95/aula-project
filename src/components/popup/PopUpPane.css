@@ -55,3 +55,13 @@
     border-top-left-radius: 3px;
 }
 
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 10px;
+}
+
+.inputLabel{
+    color: white;
+}
