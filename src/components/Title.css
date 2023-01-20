@@ -49,3 +49,14 @@
         font-size: 68px;
     }
 }
+
+@media (max-width: 600px) {
+    /* Styles for container and child elements when viewport width is less than 1000px */
+    .title-aula {
+        font-size: 80px;
+    }
+
+    .title-virtual {
+        font-size: 38px;
+    }
+}

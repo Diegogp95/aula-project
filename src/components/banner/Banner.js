@@ -12,6 +12,7 @@ function Banner(props) {
     <div className='banner' onMouseEnter={() => setShrunk(true)}
     onMouseLeave={() => setShrunk(false)}
     onClick={openLink}>
+        <div className="borderBand"></div>
         <img src={props.img} alt="" className='icon'/>
         <div className={`mask ${shrunk ? 'shrunk' : ''}`}>
             <p className='mainText'>{props.mainText}</p>

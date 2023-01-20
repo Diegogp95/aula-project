@@ -23,10 +23,11 @@
 
 .bannerContainer{
     display: flex;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
+    
+    margin: 5%;
 }
+
+
 
 
 @media (max-width: 1000px) {
@@ -49,8 +50,9 @@
 }
 
 @media not screen and (max-width: 1000px) {
-    .banner {
-      margin: auto auto;
+    .bannerContainer > *{
+    margin-left: 5%;
+    margin-right: 5%;    
     }
 }
 
