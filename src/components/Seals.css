@@ -1,0 +1,27 @@
+.sealContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 10vh;
+}
+
+.seal{
+    height: 70px;
+}
+
+
+.seals::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #154466;
+    width: 30%;
+    margin: 2rem auto;
+    box-shadow: 3px 0 3px rgb(2, 2, 2, 0.3);
+}
+
+@media (max-width: 600px) {
+    .sealContainer{
+        flex-direction: column;
+    }
+}

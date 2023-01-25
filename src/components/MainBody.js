@@ -4,7 +4,6 @@ import ContainerRow from './ContainerRow';
 import Banner from './banner/Banner';
 import webDired from './img/web-dired.png';
 import recursosAula from './img/recursos-aula.png'
-import acreditacion from './img/sello-acreditacion-2028.svg';
 
 function MainBody({handleClick}) {
   const DIRED="SITIO WEB DIRED";
