@@ -52,7 +52,7 @@
 
     box-sizing: border-box;
 
-    border: 2px solid rgb(26, 55, 80);
+    border: 2px solid rgba(46, 26, 80, 0.5);
     border-top-width: 3px;
 }
 
@@ -96,7 +96,7 @@
 .shrunk{
     height: 0%;
     opacity: 0%;
-    transition: height 300ms ease-in-out, opacity 500ms ease-in-out;
+    transition: height 300ms ease-in-out, opacity 400ms ease-in-out;
 }
 
 

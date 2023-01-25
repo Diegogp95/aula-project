@@ -3,9 +3,6 @@
     max-width: 400px;
     width: 90vw;
     background-color: #ffffffea;
-    border-radius: 5px;
-    border: 10px solid;
-    border-color: rgba(90, 90, 90, 0.25);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
