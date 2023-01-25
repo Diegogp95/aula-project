@@ -14,7 +14,6 @@
     padding-top: 70px;
     position: relative;
     margin-top: 70px;
-    padding-bottom: 10vh;
 }
 
 .main-container > *{
@@ -25,6 +24,7 @@
     display: flex;
     
     margin: 5%;
+    margin-bottom: 10%;
 }
 
 
@@ -52,11 +52,14 @@
 @media not screen and (max-width: 1000px) {
     .bannerContainer > *{
     margin-left: 5%;
-    margin-right: 5%;    
+    margin-right: 5%;
     }
 }
 
-.acreditacion{
-    height: 400px;
-    margin: auto auto;
+
+.main-container::after{
+    content: "";
+    display: block;
+    border-bottom: 20px solid #003053;
+    width: 100%;
 }

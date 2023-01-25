@@ -32,9 +32,9 @@
         vertical-align: auto;
         align-items: center;
     }
-    
-    .child {
-        flex-basis: 100%;
+
+    .Footer div:first-child{
+        margin-right: auto;
     }
 }
 
