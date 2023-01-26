@@ -46,8 +46,8 @@ const submitForm = (email, password) => {
       <div className="poppanel" onClick={(e) => e.stopPropagation()}>
         <div className="band"></div>
         <div className="inputBlock">
-            <p className='inputLabel'>Correo electrónico institucional</p>
-            <MDBInput label='Email' id='typeEmail' type='email' contrast 
+            <p className='inputLabel'>Nombre de usuario</p>
+            <MDBInput label='Username' id='typeEmail' type='email' contrast 
                 value={email} onChange={(e) => setEmail(e.target.value)} />        
         </div>
         <div className="inputBlock">
