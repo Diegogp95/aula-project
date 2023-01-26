@@ -16,19 +16,6 @@
   margin-top: 60px;
 }
 
-/* Media query to target viewport width */
-@media (max-width: 1000px) {
-    /* Styles for container and child elements when viewport width is less than 1000px */
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .child {
-        flex-basis: 100%;
-    }
-}
-
 ul {
   margin-left: 1rem; }
 

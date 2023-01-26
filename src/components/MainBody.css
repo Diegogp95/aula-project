@@ -23,10 +23,12 @@
 
 .bannerContainer{
     display: flex;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
+    
+    margin: 5%;
+    margin-bottom: 10%;
 }
+
+
 
 
 @media (max-width: 1000px) {
@@ -49,19 +51,23 @@
 }
 
 @media not screen and (max-width: 1000px) {
-    .banner {
-      margin: auto auto;
+    .bannerContainer > *{
+    margin-left: 5%;
+    margin-right: 5%;
     }
 }
 
-.acreditacion{
-    height: 400px;
-    margin: auto auto;
-}
 
 .marca{
     height: 60px;
     align-self: flex-start;
     margin-left: 300px;
     margin-bottom: 60px;
+}
+
+.main-container::after{
+    content: "";
+    display: block;
+    border-bottom: 20px solid #003053;
+    width: 100%;
 }

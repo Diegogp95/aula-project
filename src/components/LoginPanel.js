@@ -6,7 +6,8 @@ import o365logo from './img/o365-icon.svg';
 function LoginPanel({handleClick}) {
   return (
     <div className="panel">
-      <h3 style={{ textAlign: 'center' , margin: '1rem'}}>ACCEDER A LA<br />PLATAFORMA</h3>
+      <h2 style={{ textAlign: 'center' , margin: '0',
+        lineHeight: '1.8', color:'231d48'}}>ACCEDER A LA<br />PLATAFORMA</h2>
       <hr />
       <div className='inputContainer'>
         <h5>Ingreso Estudiantes/Profesores</h5>

@@ -1,13 +1,12 @@
 .banner{
     z-index: 4;
-    background-color: #F7AE00;
-    width: 25%;
-    min-width: 250px;
-    border: 3px solid rgb(26, 55, 80);
+    background-color: rgb(0, 56, 91);
+    width: 40vw;
+    min-width: 300px;
+    height: calc(450px - 10vw);
     box-sizing: content-box;
     position: relative;
-    height: 400px;
-    border-radius: 7px;
+    border-radius: 12px;
     box-shadow: 2px 2px 10px rgb(0, 0, 0);
     display: flex;
 
@@ -30,19 +29,22 @@
                   100% 100%,
                  20% 100%);  */
     background: linear-gradient(to right top,
-                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.5),
                 rgba(96, 96, 96, 0.1)),
+                linear-gradient(to right bottom,
+                rgba(208, 0, 0, 0.5),
+                rgba(150, 0, 123, 0.3)),
                 gray;
 
     position: absolute;
     right: 0;
-    width: 100%;
-    height: 70%;
+    width: 98.7%;
+    height: 67%;
     top: auto;
     bottom: 0;
+    left: auto;
 
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 10px;
 
     pointer-events: none;
     opacity: 100%;
@@ -50,24 +52,25 @@
 
     box-sizing: border-box;
 
-    border: 2px solid rgb(26, 55, 80);
+    border: 2px solid rgba(46, 26, 80, 0.5);
     border-top-width: 3px;
 }
 
 .mainText{
     position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     color: white;
-    letter-spacing: 0.3em;
+    
     margin: 1.5rem 1.5rem;
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-align: center;
     top: 40%;
     bottom: auto;
     transform: translate(0%, -50%);
 
     pointer-events: none;
+    text-shadow: 1px 1px 0px black;
 }
 
 .desc{
@@ -77,7 +80,7 @@
     z-index: 5;
     position: absolute;
     width: 100%;
-    height: 70%;
+    height: 55%;
     top: 80%;
     bottom: auto;
     transform: translate(0, -50%);
@@ -93,5 +96,19 @@
 .shrunk{
     height: 0%;
     opacity: 0%;
-    transition: height 300ms ease-in-out, opacity 500ms ease-in-out;
+    transition: height 300ms ease-in-out, opacity 400ms ease-in-out;
+}
+
+
+.borderBand{
+    background: linear-gradient(to bottom,
+    #D60019,  #D60019 33%, #004B85 33%,
+    #004B85 67%, #F7AE00 67%);
+    width: 1.3%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
 }

@@ -24,8 +24,4 @@
         flex-direction: column;
         margin-right: 0;
     }
-    
-    .child {
-        flex-basis: 100%;
-    }
 }
