@@ -5,6 +5,7 @@ import Banner from './banner/Banner';
 import webDired from './img/web-dired.png';
 import recursosAula from './img/recursos-aula.png'
 import acreditacion from './img/sello-acreditacion-2028.svg';
+import marca from './img/logo-usm_blanco.svg';
 
 function MainBody({handleClick}) {
   const DIRED="Sitio web DIRED";
@@ -14,6 +15,7 @@ function MainBody({handleClick}) {
 
   return (
     <div className="main-container">
+        <img src={marca} alt="" className='marca'/>
         <ContainerRow handleClick={handleClick} />
         <div className="bannerContainer">
             <Banner img={webDired} mainText={DIRED} desc={desc1} link='https://educacionadistancia.usm.cl/' />
