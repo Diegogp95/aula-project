@@ -3,23 +3,33 @@
     background-color: #005e90;
     height: 40px;
     flex-wrap: wrap;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 14px;
-    justify-content: end;
+    justify-content: start;
     gap: 20px;
     padding-right: 16vw;
-    font-weight: 700;
+    padding-left: 16vw;
 }
 
-.la{
+.usmcl{
+    font-family: 'Montserrat', Sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
     margin-top: 10px;
     position: relative;
     margin-bottom: 0;
-    opacity: 0.6;
+    opacity: 1;
     cursor: pointer;
+    fill: white;
 }
 
-.la:hover{
-    opacity: 1;
+.usmcl::after{
+    display: none;
+    content: "";
+}
+
+.usmcl:hover::after{
+    background-color: #E5B300;
+    display: block;
+    height: 2px;
+    width: 100%;
 }

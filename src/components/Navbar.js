@@ -5,8 +5,9 @@ function Navbar() {
   return (
     <nav>
       <div className="navbar-container">
-        <p className='la'>ES</p>
-        <p className='la'>EN</p>
+        <a href="https://usm.cl/">
+          <p className='usmcl'>USM.cl</p>
+        </a>
       </div>
     </nav>
   )
