@@ -4,7 +4,22 @@
     height: 40px;
     flex-wrap: wrap;
     font-family: 'Montserrat', sans-serif;
-    color: #3b424c;
+    color: white;
     font-size: 14px;
+    justify-content: end;
+    gap: 20px;
+    padding-right: 16vw;
+    font-weight: 700;
 }
 
+.la{
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 0;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.la:hover{
+    opacity: 1;
+}
