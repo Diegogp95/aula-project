@@ -3,13 +3,13 @@
     background-color: #005e90;
     height: 40px;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-between;
     gap: 20px;
     padding-left: calc(0.197 * 100vw - 67px);
     padding-right: calc(0.197 * 100vw - 67px);
 }
 
-.usmcl{
+.navbar-item{
     font-family: 'Montserrat', Sans-serif;
     font-size: 11px;
     font-weight: 700;
@@ -22,14 +22,20 @@
     fill: white;
 }
 
-.usmcl::after{
+.navbar-item::after{
     display: none;
     content: "";
 }
 
-.usmcl:hover::after{
+.navbar-item:hover::after{
     background-color: #E5B300;
     display: block;
     height: 2px;
     width: 100%;
+}
+
+.rightside-dropdown{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }

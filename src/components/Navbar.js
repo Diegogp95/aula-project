@@ -6,8 +6,12 @@ function Navbar() {
     <nav>
       <div className="navbar-container">
         <a href="https://usm.cl/">
-          <p className='usmcl'>USM.cl</p>
+          <p className='navbar-item'>USM.cl</p>
         </a>
+        <div className="rightside-dropdown">
+          <p className="navbar-item">Recursos Aula</p>
+          <p className="navbar-item">Sitios de interés</p>
+        </div>
       </div>
     </nav>
   )
