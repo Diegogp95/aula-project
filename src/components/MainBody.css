@@ -33,15 +33,6 @@
     }
 }
 
-
-
-.marca{
-    height: 60px;
-    align-self: flex-start;
-    margin-left: 300px;
-    margin-bottom: 60px;
-}
-
 .main-container::after{
     content: "";
     display: block;

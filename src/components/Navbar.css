@@ -5,8 +5,8 @@
     flex-wrap: wrap;
     justify-content: start;
     gap: 20px;
-    padding-right: 16vw;
-    padding-left: 16vw;
+    padding-left: calc(0.197 * 100vw - 67px);
+    padding-right: calc(0.197 * 100vw - 67px);
 }
 
 .usmcl{

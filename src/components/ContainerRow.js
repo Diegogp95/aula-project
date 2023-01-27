@@ -3,11 +3,13 @@ import './ContainerRow.css';
 import LoginPanel from './LoginPanel';
 import Title from './Title';
 import GuidePanel from './GuidePanel';
+import marca from './img/logo-usm_blanco.svg';
 
 function ContainerRow({handleClick}) {
   return (
     <div className='container'>
       <div className="info">
+        <img src={marca} alt="" className='marca'/>
         <Title />
         <GuidePanel />
       </div>

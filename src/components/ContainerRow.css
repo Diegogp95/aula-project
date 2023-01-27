@@ -25,3 +25,9 @@
         margin-right: 0;
     }
 }
+
+.marca{
+    height: 60px;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
