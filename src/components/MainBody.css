@@ -20,13 +20,6 @@
     margin-bottom: 10%;
 }
 
-.bannerContainer{
-    display: flex;
-    
-    margin: 5%;
-    margin-bottom: 10%;
-}
-
 
 
 
@@ -38,23 +31,8 @@
         align-items: center;
         min-height: 1000px;
     }
-
-    .bannerContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .bannerContainer > *{
-        margin-bottom: 10%;
-    }
 }
 
-@media not screen and (max-width: 1000px) {
-    .bannerContainer > *{
-    margin-left: 5%;
-    margin-right: 5%;
-    }
-}
 
 
 .marca{
