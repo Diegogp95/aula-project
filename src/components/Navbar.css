@@ -1,41 +1,140 @@
-.navbar-container{
+.navbar{
+    z-index: 100;
     display: flex;
     background-color: #005e90;
     height: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
-    padding-left: calc(0.197 * 100vw - 67px);
-    padding-right: calc(0.197 * 100vw - 67px);
-}
-
-.navbar-item{
     font-family: 'Montserrat', Sans-serif;
     font-size: 11px;
     font-weight: 700;
     color: white;
-    margin-top: 10px;
-    position: relative;
+    opacity: 1;
+    cursor: pointer;
+    fill: white;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    padding-left: calc(0.197 * 100vw - 67px);
+    padding-right: calc(0.197 * 100vw - 67px);
+}
+
+
+.group{
+    display: flex;
+}
+
+.navbar ul{
+    list-style: none;
+    padding-left: 0;
     margin-bottom: 0;
+    margin-left: 0;
+}
+
+.navbar ul li{
+    position: relative;
+    float: left;
+    padding-left: 7px;
+    padding-right: 7px;
+
+    font-family: 'Montserrat', Sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
     opacity: 1;
     cursor: pointer;
     fill: white;
 }
 
-.navbar-item::after{
+.navbar ul li a{
+    font-family: 'Montserrat', Sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+    fill: white;
+}
+
+.navbar ul li::after{
     display: none;
     content: "";
 }
 
-.navbar-item:hover::after{
+.navbar ul li:hover::after{
     background-color: #E5B300;
     display: block;
     height: 2px;
-    width: 100%;
+    width: calc(100% - 14px);
+    position: absolute;
+    bottom: 0;
+    left: 7px;
 }
 
-.rightside-dropdown{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.navbar ul li ul{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 180px;
+    background: #005e90;
+    border: 1px solid white;
+    display: none;
+
+    /* Para transición suave*/
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.navbar ul li ul::after{
+    position: absolute;
+    left: 20%;
+    top: -10px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #005e90;
+}
+
+.navbar ul li ul::before{
+    z-index: -2;
+    position: absolute;
+    left: 20%;
+    top: -11px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+}
+
+.navbar ul li ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar ul li ul.rightDrop{
+    right: 0;
+    left: auto;
+}
+
+.navbar ul li ul.rightDrop::before,
+.navbar ul li ul.rightDrop::after{
+    left: 60%;
+}
+
+.navbar ul li ul li:hover::after{
+    bottom: 10px;
+    height: 1.5px;
+}
+
+.navbar ul li:hover > ul{
+    display: initial;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
 }
