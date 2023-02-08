@@ -24,4 +24,4 @@ yarn-error.log*
 
 
 # hooks to maybe be added
-/src/hooks
+/src/deprecated
