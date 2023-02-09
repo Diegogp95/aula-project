@@ -75,7 +75,7 @@
 .navbar ul li ul{
     position: absolute;
     left: 0;
-    top: 40px;
+    top: 30px;
     width: 180px;
     background: #005e90;
     border: 1px solid white;
@@ -134,4 +134,8 @@
 
 .hideDD{
     display: none;
+}
+
+#rightside >* >*{
+    margin-left: 40px;
 }
