@@ -10,7 +10,7 @@ function Navbar() {
   let timer = [];
   useEffect(() => {
     if (isHovered[0]){
-      setHighlighted(prevState => [true ,prevState[1]]);
+      setHighlighted([true , false]);
     }
     else{
       timer[0] = setTimeout(() => {
@@ -23,7 +23,7 @@ function Navbar() {
 
   useEffect(() => {
     if (isHovered[1]){
-      setHighlighted(prevState => [prevState[0], true]);
+      setHighlighted([false , true]);
     }
     else{
       timer[1] = setTimeout(() => {
@@ -53,7 +53,7 @@ function Navbar() {
                 Recursos Aula
               </a>
               <ul className={`${(isHighlighted[0]) ? "showDD" : "hideDD"}
-                              ${(isHovered[0] || isHighlighted[0]) ? "test": ""}`}>
+                              ${(isHovered[0] || isHighlighted[0]) ? "animate_fadein": ""}`}>
                 <li>
                   <a href="https://educacionadistancia.usm.cl/recursos-aula-profesores/">
                     Recursos Aula Profesores
@@ -76,8 +76,8 @@ function Navbar() {
               <a href="#">
                 Sitios de interés
               </a>
-              <ul className={`rightDrop ${isHovered[1] ? "test": ""}
-                              ${isHighlighted[1] ? 'showDD' : 'hideDD'}`}>
+              <ul className={`rightDrop ${isHighlighted[1] ? 'showDD' : 'hideDD'}
+                              ${(isHovered[1] || isHighlighted[1]) ? "animate_fadein": ""}`}>
                 <li>
                   <a href="https://usm.cl/sitios-academicos/">
                     Sitios Académicos

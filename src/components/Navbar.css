@@ -76,7 +76,7 @@
     position: absolute;
     left: 0;
     top: 30px;
-    width: 180px;
+    width: 200px;
     background: #005e90;
     border: 1px solid white;
 
@@ -112,6 +112,10 @@
     padding-bottom: 10px;
 }
 
+.navbar ul li ul li a{
+    font-size: 12px;
+}
+
 .navbar ul li ul.rightDrop{
     right: 0;
     left: auto;
@@ -136,7 +140,7 @@
     display: none;
 }
 
-.test{
+.animate_fadein{
     animation: fadein 100ms;
 }
 
