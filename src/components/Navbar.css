@@ -79,11 +79,7 @@
     width: 180px;
     background: #005e90;
     border: 1px solid white;
-    display: none;
-
-    animation: fadein-and-moveup 0.5s;
-    animation-direction: reverse;
-    animation-delay: 0.5s;
+   
 }
 
 .navbar ul li ul::after{
@@ -131,20 +127,11 @@
     height: 1.5px;
 }
 
-.navbar ul li:hover > ul{
+
+.showDD{
     display: initial;
-    animation: fadein-and-moveup 0.5s;
-    animation-delay: 0ms;
 }
 
-@keyframes fadein-and-moveup {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.hideDD{
+    display: none;
 }
