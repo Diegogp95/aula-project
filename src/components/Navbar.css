@@ -79,7 +79,7 @@
     width: 180px;
     background: #005e90;
     border: 1px solid white;
-   
+
 }
 
 .navbar ul li ul::after{
@@ -136,6 +136,24 @@
     display: none;
 }
 
+.test{
+    animation: fadein 100ms;
+}
+
+
 #rightside >* >*{
     margin-left: 40px;
+}
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

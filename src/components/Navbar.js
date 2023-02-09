@@ -7,30 +7,6 @@ function Navbar() {
   const [isHovered, setHovered] = useState([false, false]);
   const [isHighlighted, setHighlighted] = useState([false, false]);
 
-
-  {/*}
-  let timeoutId;
-  useEffect(() => {
-
-    for (let i = 0 ; i < isHovered.length; i++){
-      if (isHovered[i]){
-        clearTimeout(timeoutId);
-        setHighlighted(prevState => [
-          (i == 0) ? true : prevState[0],
-          (i == 1) ? true : prevState[1]
-        ]);
-      }
-      else{
-        timeoutId = setTimeout(() => {
-          setHighlighted(prevState => [
-            (i == 0) ? false : prevState[0],
-            (i == 1) ? false : prevState[1]
-          ]);
-        }, 500);
-      }
-    }
-  }, isHovered) */}
-
   let timer = [];
   useEffect(() => {
     if (isHovered[0]){
@@ -76,7 +52,8 @@ function Navbar() {
               <a href="#">
                 Recursos Aula
               </a>
-              <ul className={isHighlighted[0] ? "showDD" : "hideDD"}>
+              <ul className={`${(isHighlighted[0]) ? "showDD" : "hideDD"}
+                              ${(isHovered[0] || isHighlighted[0]) ? "test": ""}`}>
                 <li>
                   <a href="https://educacionadistancia.usm.cl/recursos-aula-profesores/">
                     Recursos Aula Profesores
@@ -99,7 +76,8 @@ function Navbar() {
               <a href="#">
                 Sitios de interés
               </a>
-              <ul className={`rightDrop ${isHighlighted[1] ? 'showDD' : 'hideDD'}`}>
+              <ul className={`rightDrop ${isHovered[1] ? "test": ""}
+                              ${isHighlighted[1] ? 'showDD' : 'hideDD'}`}>
                 <li>
                   <a href="https://usm.cl/sitios-academicos/">
                     Sitios Académicos
