@@ -28,16 +28,7 @@
 
 
 /* Media query to target viewport width */
-@media (max-width: 1000px) {
-    /* Styles for container and child elements when viewport width is less than 1000px */
-    .title-aula {
-        font-size: 90px;
-    }
 
-    .title-virtual {
-        font-size: 43px;
-    }
-}
 
 @media (max-width: 1350px) {
     /* Styles for container and child elements when viewport width is less than 1000px */
@@ -47,6 +38,17 @@
 
     .title-virtual {
         font-size: 68px;
+    }
+}
+
+@media (max-width: 700px) {
+    /* Styles for container and child elements when viewport width is less than 1000px */
+    .title-aula {
+        font-size: 100px;
+    }
+
+    .title-virtual {
+        font-size: 58px;
     }
 }
 

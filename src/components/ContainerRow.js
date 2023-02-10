@@ -7,7 +7,7 @@ import marca from './img/logo-usm_blanco.svg';
 
 function ContainerRow({handleClick}) {
   return (
-    <div className='container'>
+    <div className='container' id='container-row'>
       <div className="info">
         <img src={marca} alt="" className='marca'/>
         <Title />

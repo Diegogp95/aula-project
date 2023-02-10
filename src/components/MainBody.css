@@ -1,5 +1,4 @@
-.main-container{
-    z-index: 0;
+.gadient-background{
     background: linear-gradient(to right top,
         rgba(0, 0, 0, 0.5),
         rgba(255, 255, 255, 0.1)),
@@ -8,12 +7,16 @@
         rgb(0, 62, 110) 50px,
         rgb(0, 62, 110) 50px,
         rgb(0, 55, 101) 70px);
-    width: 100%;
-    height: auto;
-    min-height: 720px;
-    padding-top: 50px;
+        width: 100%;
+
+        display: grid;
+        place-items: center;
+}
+
+.main-container{
+    z-index: 0;
     position: relative;
-    margin-top: 0;
+    padding: 40px 10px;
 }
 
 .main-container > *{
@@ -33,7 +36,7 @@
     }
 }
 
-.main-container::after{
+.gadient-background::after{
     content: "";
     display: block;
     border-bottom: 20px solid #003053;
