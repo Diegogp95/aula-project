@@ -1,7 +1,7 @@
 import React from 'react';
 import './MainBody.css';
 import ContainerRow from './ContainerRow';
-import './Limit.css'
+import './Limit.css';
 
 function MainBody({handleClick}) {
   

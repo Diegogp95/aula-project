@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import './Limit.css';
 
 
 function Navbar() {
@@ -36,6 +37,7 @@ function Navbar() {
   return (
     <nav>
       <div className="navbar">
+        <div className="container limit-width">
         <div className="group">
           <ul>
             <li>
@@ -92,6 +94,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
+      </div>
       </div>
     </nav>
   )

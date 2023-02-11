@@ -12,7 +12,7 @@ function BannerContainer() {
     const desc2="Esta es una descripción que debo corregir luego, texto random probando como se comporta este texto en el container";
 
     return (
-        <div className="bannerContainer">
+        <div className='container' id="bannerContainer">
             <Banner img={webDired} mainText={DIRED} desc={desc1} link='https://educacionadistancia.usm.cl/' />
             <Banner img={recursosAula} mainText={Recursos} desc={desc2} link='https://educacionadistancia.usm.cl/aula.html' />
         </div>

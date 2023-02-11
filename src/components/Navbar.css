@@ -10,19 +10,14 @@
     font-weight: 700;
     color: white;
     opacity: 1;
-    cursor: pointer;
     fill: white;
-
-    padding-top: 0;
-    padding-bottom: 0;
-
-    padding-left: calc(0.197 * 100vw - 67px);
-    padding-right: calc(0.197 * 100vw - 67px);
 }
 
 
 .group{
     display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .navbar ul{
@@ -145,8 +140,10 @@
 }
 
 
-#rightside >* >*{
-    margin-left: 40px;
+@media (min-width: 800px){
+        #rightside >* >*{
+        margin-left: 40px;
+    }
 }
 
 

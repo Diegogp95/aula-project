@@ -1,12 +1,14 @@
 .banner{
     z-index: 4;
     background-color: rgb(0, 56, 91);
-    width: 40vw;
+    width: 40%;
     min-width: 300px;
     height: calc(450px - 10vw);
+    min-height: 290px;
     box-sizing: content-box;
     position: relative;
-    border-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
     box-shadow: 2px 2px 3px rgb(0, 0, 0);
     display: flex;
 
@@ -38,7 +40,7 @@
 
     position: absolute;
     right: 0;
-    width: 98.7%;
+    width: 100%;
     height: 67%;
     top: auto;
     bottom: 0;
@@ -104,11 +106,18 @@
     background: linear-gradient(to bottom,
     #D60019,  #D60019 33%, #004B85 33%,
     #004B85 67%, #F7AE00 67%);
-    width: 1.3%;
+    width: 6px;
     height: 100%;
     position: absolute;
-    left: 0;
+    left: -6px;
     top: 0;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
+}
+
+
+/* lo siguiente es para sopesar la adición de 6px del borderband
+    en el centrado del banner, muy despreciable pero es mejor no ignorar */
+.banner{
+    transform: translateX(3px);
 }
