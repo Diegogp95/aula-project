@@ -1,6 +1,6 @@
 .visible{
     display: block;
-    z-index: 3;
+    z-index: 100;
     background: transparent;
     background-color:rgba(188, 188, 188, 0.664);
     position: fixed;

@@ -16,7 +16,7 @@ function Navbar() {
     else{
       timer[0] = setTimeout(() => {
         setHighlighted(prevState => [false, prevState[1]]);
-      }, 200);
+      }, 500);
     }
     return () => clearTimeout(timer[0]);
   }, [isHovered[0]]);
@@ -29,7 +29,7 @@ function Navbar() {
     else{
       timer[1] = setTimeout(() => {
         setHighlighted(prevState => [prevState[0], false]);
-      }, 200);
+      }, 500);
     }
     return () => clearTimeout(timer[1]);
   }, [isHovered[1]]);

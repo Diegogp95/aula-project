@@ -1,5 +1,5 @@
 .navbar{
-    z-index: 100;
+    z-index: 50;
     display: flex;
     background-color: #005e90;
     height: 40px;
@@ -57,14 +57,25 @@
     content: "";
 }
 
-.navbar ul li:hover::after{
-    background-color: #E5B300;
+.navbar ul li::after{
     display: block;
+    background-color: #E5B300;
     height: 2px;
     width: calc(100% - 14px);
     position: absolute;
     bottom: 0;
-    left: 7px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 200ms 0ms linear;
+}
+
+.navbar ul li:hover::after{
+    visibility: visible;
+    transform: scaleX(1);
+    transition: transform 200ms 0s linear;
 }
 
 .navbar ul li ul{
@@ -136,7 +147,7 @@
 }
 
 .animate_fadein{
-    animation: fadein 100ms;
+    animation: fadein 300ms;
 }
 
 
