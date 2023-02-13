@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import './Limit.css';
-
+import Hamburger from './Hamburger';
 
 function Navbar() {
 
@@ -93,6 +93,11 @@ function Navbar() {
               </ul>
             </li>
           </ul>
+        </div>
+        <div className="group">
+          <Hamburger>
+
+          </Hamburger>
         </div>
       </div>
       </div>

@@ -11,11 +11,12 @@
     color: white;
     opacity: 1;
     fill: white;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 
 .group{
-    display: flex;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -151,11 +152,7 @@
 }
 
 
-@media (min-width: 800px){
-        #rightside >* >*{
-        margin-left: 40px;
-    }
-}
+
 
 
 @keyframes fadein {
@@ -167,5 +164,15 @@
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+#rightside >* >*{
+    margin-left: 40px;
+}
+
+@media (max-width: 1000px){
+    #rightside {
+        display: none;
     }
 }
