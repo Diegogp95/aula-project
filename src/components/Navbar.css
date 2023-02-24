@@ -92,7 +92,7 @@
 .navbar ul li ul::after{
     position: absolute;
     left: 20%;
-    top: -10px;
+    top: -9px;
     width: 0;
     height: 0;
     content: '';
@@ -151,10 +151,6 @@
     animation: fadein 300ms;
 }
 
-
-
-
-
 @keyframes fadein {
     0% {
         opacity: 0;
@@ -171,8 +167,3 @@
     margin-left: 40px;
 }
 
-@media (max-width: 1000px){
-    #rightside {
-        display: none;
-    }
-}

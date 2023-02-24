@@ -1,12 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Hamburger.css';
 
-function Hamburger() {
-  const [isDisplayed, setDisplay] = useState(false);
-  const toggleDisplay = () => {
-    setDisplay(!isDisplayed);
-    console.log(isDisplayed);
-  }
+function Hamburger({ isDisplayed, toggleDisplay }) {
 
   return (
     <div className='ham-btn' onClick={toggleDisplay}>

@@ -1,0 +1,65 @@
+.mob-DD{
+    z-index: 49;
+    display: flex;
+    background-color: #005e90;
+    font-family: 'Montserrat', Sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.first-menu{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+}
+
+.second-menu{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    display: flex;
+}
+
+
+.mob-DD ul{
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;    
+}
+
+
+.mob-DD ul li:first-of-type{
+    border: unset;
+}
+
+.mob-DD ul li{
+    border-top: thin solid rgba(0, 0, 0, 0.15);
+}
+
+.mob-DD ul li ul{
+    padding-left: 0;
+    padding-right: 5px;
+    border-top: thin #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mob-DD ul li ul li{
+    padding: 10px 7px;
+    border: unset;
+}
+
+.mob-DD >*{
+    border-bottom: thin solid rgba(0, 0, 0, 0.15);
+}
+
+.mob-DD a{
+    all: unset;
+}

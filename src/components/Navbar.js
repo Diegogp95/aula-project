@@ -3,7 +3,7 @@ import './Navbar.css';
 import './Limit.css';
 import Hamburger from './Hamburger';
 
-function Navbar() {
+function Navbar({isWide, isDisplayed, toggleDisplay}) {
 
   const [isHovered, setHovered] = useState([false, false]);
   const [isHighlighted, setHighlighted] = useState([false, false]);
@@ -47,6 +47,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
+        {isWide ?(
         <div className="group" id='rightside'>
           <ul>
             <li onMouseOver={() => setHovered(prevState => [true, prevState[1]])} 
@@ -93,12 +94,10 @@ function Navbar() {
               </ul>
             </li>
           </ul>
-        </div>
-        <div className="group">
-          <Hamburger>
-
-          </Hamburger>
-        </div>
+        </div>) : (
+        <div className="group" id='ham'>
+          <Hamburger isDisplayed={isDisplayed} toggleDisplay={toggleDisplay} />
+        </div> )}
       </div>
       </div>
     </nav>
