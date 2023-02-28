@@ -4,8 +4,8 @@ function FAQ() {
   return (
     <div>
         <hr />
-        <p>¿Cuál es la frecuencia de la 604?</p>
-        <ul><li>1/1000, la 604 no pasa nunca.</li></ul>
+        <p>Pregunta 1</p>
+        <ul><li>Respuesta 1</li></ul>
         <hr />
         <p>Pregunta 2</p>
         <ul><li>Respuesta 2</li></ul>

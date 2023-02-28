@@ -21,11 +21,11 @@
 #Qs p{
     color: white;
     font-size: 1.3em;
-    text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.4);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
 }
 
 #Qs li{
     color: white;
     font-size: 1em;
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
 }
