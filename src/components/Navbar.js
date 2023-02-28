@@ -50,6 +50,11 @@ function Navbar({isWide, isDisplayed, toggleDisplay}) {
         {isWide ?(
         <div className="group" id='rightside'>
           <ul>
+            <li>
+              <a href="https://educacionadistancia.usm.cl">
+                Sitio web DIRED
+              </a>
+            </li>
             <li onMouseOver={() => setHovered(prevState => [true, prevState[1]])} 
                 onMouseOut={() => setHovered(prevState => [false, prevState[1]])}>
               <a href="#">

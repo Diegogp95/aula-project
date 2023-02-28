@@ -28,6 +28,21 @@ function MobileDropDown({isWide, isDisplayed}) {
             <div className="container limit-width">
             <ul>
                 <li>
+                    <a href="https://educacionadistancia.usm.cl">
+                        <ul>
+                            <li>
+                                Sitio web DIRED
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            </div>
+            <div className="first-menu">
+            <div className="container limit-width">
+            <ul>
+                <li>
                    <ul onClick={() => toggleDrop(0)}>
                         <li>
                             Recursos Aula

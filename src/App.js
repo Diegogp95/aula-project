@@ -23,7 +23,6 @@ function App(){
       <MobileDropDown isWide={isWide} isDisplayed={isDisplayed} />
       <PopUpPane isVisible={isVisible} handleClick={handleClick} />
       <MainBody handleClick={handleClick} />
-      <BannerContainer />
       <Seals />
       <Footer />
     </>

@@ -11,6 +11,7 @@
     left: 0;
     width: 100%;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .first-menu{
