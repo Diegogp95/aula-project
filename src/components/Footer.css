@@ -1,6 +1,9 @@
-.Footer{
+.backgroundwrap{
     background: solid;
     background-color: rgb(50, 50, 50);
+}
+
+.Footer{
     min-height: 140px;
     width: 100%;
     display: flex;
