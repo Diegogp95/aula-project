@@ -101,7 +101,7 @@ function Navbar({isWide, isDisplayed, toggleDisplay}) {
           </ul>
         </div>) : (
         <div className="group" id='ham'>
-          <Hamburger isDisplayed={isDisplayed} toggleDisplay={toggleDisplay} />
+          <Hamburger toggleDisplay={toggleDisplay} />
         </div> )}
       </div>
       </div>

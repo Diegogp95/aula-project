@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import FooterText from './FooterText';
 import usm from './img/usm_cl.svg';
+import './Limit.css';
 
 function Footer() {
   return (

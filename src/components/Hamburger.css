@@ -16,6 +16,11 @@
     align-items: center;
     height: 30px;
     width: 30px;
+    border-radius: 3px;
+}
+
+.ham-icon:hover{
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .ham-bar{
@@ -34,20 +39,4 @@
 
 #bot-bar {
     bottom: 7px;
-}
-
-#top-bar.test{
-    transform: rotate(45deg) translate(6px, 4px);
-    transition: all .2s ease-in-out;
-}
-
-#bot-bar.test{
-    transform:  rotate(-45deg) translate(6px, -4px);
-    transition: all .2s ease-in-out;
-}
-
-#mid-bar.test{
-    transform: translateX(40px);
-    opacity: 0;
-    transition: all .2s ease-in-out;
 }
