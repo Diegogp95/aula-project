@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import PopUpPane from "./components/popup/PopUpPane";
 import { usePopUp } from "./components/popup/usePopUp";
 import Seals from "./components/Seals";
-import BannerContainer from "./components/BannerContainer";
 import MobileDropDown from "./components/MobileDropDown";
 import useViewport from "./components/useViewport";
 import useHamburger from "./components/useHamburger";
@@ -19,7 +18,7 @@ function App(){
 
   return(
     <>
-      <Navbar isWide={isWide} isDisplayed={isDisplayed} toggleDisplay={toggleDisplay} />
+      <Navbar isWide={isWide} toggleDisplay={toggleDisplay} />
       <MobileDropDown isWide={isWide} isDisplayed={isDisplayed} />
       <PopUpPane isVisible={isVisible} handleClick={handleClick} />
       <MainBody handleClick={handleClick} />

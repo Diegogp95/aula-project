@@ -47,7 +47,10 @@ function MobileDropDown({isWide, isDisplayed}) {
                         <li>
                             Recursos Aula
                         </li>
-                        <li><FontAwesomeIcon icon={faAngleDown}></FontAwesomeIcon></li>
+                        <li><FontAwesomeIcon icon={faAngleDown}
+                            className={isDropped[0] ? 'rotate-arrow' : ''}>
+                            </FontAwesomeIcon>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -96,7 +99,10 @@ function MobileDropDown({isWide, isDisplayed}) {
                         <li>
                             Sitios de interés
                         </li>
-                        <li><FontAwesomeIcon icon={faAngleDown}></FontAwesomeIcon></li>
+                        <li><FontAwesomeIcon icon={faAngleDown}
+                            className={isDropped[1] ? 'rotate-arrow' : ''}>
+                            </FontAwesomeIcon>
+                        </li>
                     </ul>
                 </li>
             </ul>

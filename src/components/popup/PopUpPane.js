@@ -2,15 +2,13 @@ import React, {useState} from 'react'
 import './PopUpPane.css'
 import { MDBBtn, MDBInput } from 'mdb-react-ui-kit';
 import '../Button.css';
-//import chroma from 'chroma-js'
 
 function PopUpPane({isVisible, handleClick}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-//  const lightColor = chroma('#004B85').brighten(0.5).hex();
 
 
-{/* 
+/* 
 
 -- agregar la función para enviar formulario en botón final --
 <MDBBtn className="btn-submit" size='lg' color="danger" 
@@ -33,7 +31,7 @@ const submitForm = (email, password) => {
       console.error('Error:', error);
     });
 }
-*/}
+*/
 
 
 
@@ -57,13 +55,6 @@ const submitForm = (email, password) => {
         </div>
         <MDBBtn className="btn-submit" size='lg' color="light" 
             aria-label="Submit"  > Ingresar</MDBBtn>
-{/*            
-        <MDBBtn outline contrast>Ingresar</MDBBtn>
-        <MDBBtn className="btn-submit" size='lg' color="info" 
-            aria-label="Submit"  > Ingresar</MDBBtn>
-        <button className="login-button" style={{border: `1px solid ${lightColor}`}}>
-            INGRESAR</button>
-*/}
       </div>
     </div>
   )

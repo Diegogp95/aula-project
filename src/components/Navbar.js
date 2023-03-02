@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
 import './Limit.css';
 import Hamburger from './Hamburger';
 
-function Navbar({isWide, isDisplayed, toggleDisplay}) {
+function Navbar({isWide, toggleDisplay}) {
 
   const [isHovered, setHovered] = useState([false, false]);
   const [isHighlighted, setHighlighted] = useState([false, false]);
 
-  let timer = [];
+  const [timer, setTimer] = useState(null);
+  const timerRef = useRef(null);
+  
+  /*
   useEffect(() => {
     if (isHovered[0]){
       setHighlighted([true , false]);
@@ -34,6 +37,26 @@ function Navbar({isWide, isDisplayed, toggleDisplay}) {
     return () => clearTimeout(timer[1]);
   }, [isHovered[1]]);
 
+*/
+  useEffect(() => {
+    if (isHovered[1]){
+      setHighlighted([false , true]);
+    }
+    else if (isHovered[0]){
+      setHighlighted([true , false]);
+    }
+    else{
+      setTimer(setTimeout(() => {
+        setHighlighted([false, false]);
+      }, 500));
+    }
+    return () => clearTimeout(timerRef.current);
+  }, [isHovered]);
+
+  useEffect(() => {
+    timerRef.current = timer;
+  }, [timer]);
+
   return (
     <nav>
       <div className="navbar">
@@ -57,7 +80,7 @@ function Navbar({isWide, isDisplayed, toggleDisplay}) {
             </li>
             <li onMouseOver={() => setHovered(prevState => [true, prevState[1]])} 
                 onMouseOut={() => setHovered(prevState => [false, prevState[1]])}>
-              <a href="#">
+              <a href="/#">
                 Recursos Aula
               </a>
               <ul className={`${(isHighlighted[0]) ? "showDD" : "hideDD"}
@@ -81,7 +104,7 @@ function Navbar({isWide, isDisplayed, toggleDisplay}) {
             </li>
             <li onMouseOver={() => setHovered(prevState => [prevState[0], true])} 
                 onMouseOut={() => setHovered(prevState => [prevState[0], false])}>
-              <a href="#">
+              <a href="/#">
                 Sitios de interés
               </a>
               <ul className={`rightDrop ${isHighlighted[1] ? 'showDD' : 'hideDD'}
