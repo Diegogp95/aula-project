@@ -4,7 +4,7 @@ Este repositorio es la implementación del Homepage de AULA USM en reemplazo del
 
 ## Como usar
 
-Se debe instalar previamente Node Js. Luego, sitandose en el directorio del repositorio local, se deben instalar los paquetes.
+Se debe instalar previamente Node Js. Luego, situandose en el directorio del repositorio local, se deben instalar los paquetes.
 
 ```
 npm install
