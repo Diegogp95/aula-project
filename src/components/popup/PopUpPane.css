@@ -24,7 +24,7 @@
     height: 600px;
     width: 450px;
     max-width: 70vw;
-    max-height: calc(98vw);
+    max-height: calc(110vw);
     background-color: #004B85;
     display: flex;
     justify-content: space-evenly;

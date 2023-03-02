@@ -31,3 +31,17 @@
     align-self: flex-start;
     margin-bottom: 20px;
 }
+
+
+@media (max-width: 600px){
+    .marca{
+        height: 50px;
+    }
+}
+
+
+@media (max-width: 400px){
+    .marca{
+        height: 45px;
+    }
+}

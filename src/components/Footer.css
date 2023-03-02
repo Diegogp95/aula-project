@@ -22,9 +22,6 @@
     margin: 40px 10px;
 }
 
-.Footer div:first-child{
-    margin-right: 25%;
-}
 
 /* Media query to target viewport width */
 @media (max-width: 1000px) {
@@ -37,6 +34,13 @@
 
     .Footer div:first-child{
         margin-right: auto;
+    }
+}
+
+@media (max-width: 400px){
+    .uhome{
+        max-width: 85vw;
+        margin: 40px 10px;
     }
 }
 

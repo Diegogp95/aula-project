@@ -27,11 +27,10 @@
 }
 
 
-/* Media query to target viewport width */
+/* Media queries to target viewport width */
 
 
 @media (max-width: 1350px) {
-    /* Styles for container and child elements when viewport width is less than 1000px */
     .title-aula {
         font-size: 140px;
     }
@@ -42,7 +41,6 @@
 }
 
 @media (max-width: 700px) {
-    /* Styles for container and child elements when viewport width is less than 1000px */
     .title-aula {
         font-size: 100px;
     }
@@ -53,12 +51,54 @@
 }
 
 @media (max-width: 600px) {
-    /* Styles for container and child elements when viewport width is less than 1000px */
     .title-aula {
         font-size: 80px;
     }
 
     .title-virtual {
         font-size: 38px;
+    }
+}
+
+@media (max-width: 400px){
+    .title-aula {
+        font-size: 70px;
+    }
+
+    .title-virtual {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 350px){
+    .title-aula {
+        font-size: 65px;
+    }
+
+    .title-virtual {
+        font-size: 32px;
+    }
+}
+
+
+
+@media (max-width: 330px){
+    .title-aula {
+        font-size: 60px;
+    }
+
+    .title-virtual {
+        font-size: 29px;
+    }
+}
+
+
+@media (max-width: 310px){
+    .title-aula {
+        font-size: 55px;
+    }
+
+    .title-virtual {
+        font-size: 27px;
     }
 }
