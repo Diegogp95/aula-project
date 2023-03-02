@@ -1,10 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './GuidePanel.css'
-import FAQ from './FAQ';
 
 function GuidePanel() {
-  const [isExpanded, setIsExpanded] = useState(false);
-
   return (
     <div className='guide-panel'>
       <div id='Qs'>
@@ -17,9 +14,6 @@ function GuidePanel() {
           <li>La opción de ingreso manual es solo para la administración y soporte de este sitio.</li>
           <li>Recuerda que tenemos gran cantidad de manuales y tutoriales a tu disponibilidad en la sección 'Recursos Aula'.</li>
       </ul>
-      <p className='section'>Preguntas Frecuentes (F.A.Q.)</p>
-      <p className='charBtn' onClick={() => setIsExpanded(!isExpanded)}>{isExpanded ? '▲' : '▼'}</p>
-      {isExpanded && <div className='text'><FAQ /></div>}
     </div>
     </div>
   )
