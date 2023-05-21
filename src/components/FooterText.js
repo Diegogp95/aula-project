@@ -9,11 +9,13 @@ function FooterText() {
         <br />
         <br />
         +56 32 2652734 -
-        <a href="mailto: dired@usm.cl" target="_blank" className='external'> dired@usm.cl</a>
+        <a href="mailto: dired@usm.cl" target="_blank"
+          rel="noreferrer" className='external'> dired@usm.cl</a>
         <br />
         <br />
         Sitio web administrado por la&nbsp;
-        <a href="https://educacionadistancia.usm.cl/" target="_blank" className='external'>Dirección de Educación a Distancia</a>
+        <a href="https://educacionadistancia.usm.cl/"  target="_blank" 
+          rel="noreferrer" className='external'>Dirección de Educación a Distancia</a>
       </p>
     </div>
   )

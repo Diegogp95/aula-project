@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+!/node_modules/mdb-react-ui-kit/dist/css/mdb.min.css
 /.pnp
 .pnp.js
 

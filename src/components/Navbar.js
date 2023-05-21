@@ -64,7 +64,7 @@ function Navbar({isWide, toggleDisplay}) {
         <div className="group">
           <ul>
             <li>
-              <a href="https://usm.cl/">
+              <a href="https://usm.cl/" target="_blank" rel="noreferrer">
                 USM.cl
                 </a>
             </li>
@@ -74,7 +74,7 @@ function Navbar({isWide, toggleDisplay}) {
         <div className="group" id='rightside'>
           <ul>
             <li>
-              <a href="https://educacionadistancia.usm.cl">
+              <a href="https://educacionadistancia.usm.cl" target="_blank" rel="noreferrer">
                 Sitio web DIRED
               </a>
             </li>
@@ -86,17 +86,17 @@ function Navbar({isWide, toggleDisplay}) {
               <ul className={`${(isHighlighted[0]) ? "showDD" : "hideDD"}
                               ${(isHovered[0] || isHighlighted[0]) ? "animate_fadein": ""}`}>
                 <li>
-                  <a href="https://educacionadistancia.usm.cl/recursos-aula-profesores/">
+                  <a href="https://educacionadistancia.usm.cl/recursos-aula-profesores/" target="_blank" rel="noreferrer">
                     Recursos Aula Profesores
                   </a>
                 </li>
                 <li>
-                  <a href="https://educacionadistancia.usm.cl/recursos-aula-estudiantes/">
+                  <a href="https://educacionadistancia.usm.cl/recursos-aula-estudiantes/" target="_blank" rel="noreferrer">
                     Recursos Aula Estudiantes
                   </a>
                 </li>
                 <li>
-                  <a href="https://educacionadistancia.usm.cl/recursos-zoom/">
+                  <a href="https://educacionadistancia.usm.cl/recursos-zoom/" target="_blank" rel="noreferrer">
                     Recursos Zoom
                   </a>
                 </li>
@@ -110,12 +110,12 @@ function Navbar({isWide, toggleDisplay}) {
               <ul className={`rightDrop ${isHighlighted[1] ? 'showDD' : 'hideDD'}
                               ${(isHovered[1] || isHighlighted[1]) ? "animate_fadein": ""}`}>
                 <li>
-                  <a href="https://usm.cl/sitios-academicos/">
+                  <a href="https://usm.cl/sitios-academicos/" target="_blank" rel="noreferrer">
                     Sitios Académicos
                   </a>
                 </li>
                 <li>
-                  <a href="https://usm.cl/sitios-administrativos/">
+                  <a href="https://usm.cl/sitios-administrativos/" target="_blank" rel="noreferrer">
                     Sitios Administrativos
                   </a>
                 </li>
